@@ -15,6 +15,7 @@ repositories {
 
 repositories {
     mavenCentral()
+    maven("https://jitpack.io")
 }
 
 dependencies {
@@ -24,11 +25,13 @@ dependencies {
     // implementation(kotlin("reflect"))
 
     // Dependencies
-    // implementation(...)
+    implementation("com.github.Lipen:kotlin-toposort:0.1.0")
+    implementation("com.soywiz.korlibs.klock:klock-jvm:3.3.1")
+    implementation("com.squareup.okio:okio:3.2.0")
 
     // Logging
-    // implementation("io.github.microutils:kotlin-logging:3.0.4")
-    // runtimeOnly("ch.qos.logback:logback-classic:1.4.4")
+    implementation("io.github.microutils:kotlin-logging:3.0.4")
+    runtimeOnly("ch.qos.logback:logback-classic:1.4.4")
 
     // Test
     testImplementation(kotlin("test"))
