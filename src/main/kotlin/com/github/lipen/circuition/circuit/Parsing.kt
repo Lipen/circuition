@@ -2,16 +2,21 @@ package com.github.lipen.circuition.circuit
 
 import com.github.lipen.circuition.lineSequence
 import com.github.lipen.circuition.useWith
+import mu.KotlinLogging
 import okio.buffer
 import okio.source
 import java.nio.file.Path
 import kotlin.io.path.Path
+
+private val logger = KotlinLogging.logger {}
 
 fun parseBench(path: String): Circuit {
     return parseBench(Path(path))
 }
 
 fun parseBench(path: Path): Circuit {
+    logger.debug { "Parsing BENCH from '$path'" }
+
     val inputs: MutableList<Input> = mutableListOf()
     val outputNames: MutableList<String> = mutableListOf()
     val gates: MutableList<Gate> = mutableListOf()
