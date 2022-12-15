@@ -1,0 +1,46 @@
+= Circuit Library for Kotlin
+
+ifdef::env-github[]
+:important-caption: :heavy_exclamation_mark:
+:note-caption: :memo:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+:caution-caption: :fire:
+endif::[]
+
+image:https://github.com/Lipen/circuition/workflows/Build/badge.svg?branch=master["Build",link="https://github.com/Lipen/circuition/actions"]
+image:https://jitpack.io/v/Lipen/circuition.svg["JitPack",link="https://jitpack.io/p/Lipen/circuition"]
+image:https://hitsofcode.com/github/Lipen/circuition["Hits-of-Code",link="https://hitsofcode.com/view/github/Lipen/circuition"]
+
+> This library provides easy-to-use tools for managing circuits in Kotlin.
+> It contains methods for parsing AIGER and BENCH files, as well as classes for representing AIGs and circuits in your code.
+> With this library, you can quickly and easily work with circuits in Kotlin, making it a great choice for anyone looking to build circuit-based applications.
+
+== Installation
+
+[source,kotlin]
+.build.gradle.kts
+----
+repositories {
+    maven(url = "https://jitpack.io")
+}
+dependencies {
+    implementation("com.github.Lipen:circuition:$version")
+}
+----
+
+== Library usage
+
+[source,kotlin]
+----
+import com.github.lipen.circuition.circuit.parseBench
+import com.github.lipen.circuition.aig.parseAig
+
+fun main() {
+    val circuit = parseBench("data/examples/bench/c17.bench")
+    println("circuit = $circuit")
+
+    val aig = parseAig("data/examples/aag/c17.aag")
+    println("aig = $aig")
+}
+----
