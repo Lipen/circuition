@@ -13,7 +13,7 @@ fun main() {
 
     println("Name: $name")
 
-    val circuit = parseBench("data/examples/bench/c17.bench")
+    val circuit = parseBench("data/examples/bench/$name.bench")
     println("circuit = $circuit")
     println("Size: ${circuit.size}")
 
