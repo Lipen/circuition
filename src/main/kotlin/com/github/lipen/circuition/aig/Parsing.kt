@@ -10,14 +10,14 @@ import okio.source
 import java.nio.file.Path
 import kotlin.io.path.Path
 
-private val log = KotlinLogging.logger {}
+private val logger = KotlinLogging.logger {}
 
 fun parseAig(filename: String): Aig {
     return parseAig(Path(filename))
 }
 
 fun parseAig(path: Path): Aig {
-    log.debug { "Parsing AIG from '$path'" }
+    logger.debug { "Parsing AIG from '$path'" }
 
     path.source().buffer().useWith {
         val lines = lineSequence().iterator()
@@ -98,10 +98,10 @@ fun parseAig(path: Path): Aig {
 private fun findHeader(lines: Iterator<String>): String {
     for (line in lines) {
         if (line.startsWith("c")) {
-            log.debug { "Pre-header comment '$line'" }
+            logger.debug { "Pre-header comment '$line'" }
             // skip comment line
         } else if (line.startsWith("aig") || line.startsWith("aag")) {
-            log.debug { "Header '$line'" }
+            logger.debug { "Header '$line'" }
             return line
         } else {
             error("Bad line '$line'")
