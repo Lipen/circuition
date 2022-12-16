@@ -9,7 +9,7 @@ class Circuit(
     val inputs: List<Input>,
     val outputs: List<Node>,
     val gates: List<Gate>,
-    val mapping: Map<String, Node>, // {name: node}
+    private val mapping: Map<String, Node>, // {name: node}
 ) {
     init {
         require(inputs.size + gates.size == mapping.size)

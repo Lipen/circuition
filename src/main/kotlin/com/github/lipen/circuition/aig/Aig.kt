@@ -15,7 +15,7 @@ class Aig(
     val inputs: List<AigInput>,
     val outputs: List<Ref>,
     val andGates: List<AigAndGate>,
-    val mapping: Map<Int, AigNode>, // {id: node}
+    private val mapping: Map<Int, AigNode>, // {id: node}
     // val latches: List<AigLatch>,
     // TODO: val symbolTable...
 ) {
