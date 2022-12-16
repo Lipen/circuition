@@ -49,7 +49,6 @@ class Circuit(
     }
 
     override fun toString(): String {
-        // return "Circuit(inputs = ${inputs.map { it.name }}, outputs = ${outputs.map { it.name }}, gates = ${gates.map { it.name }})"
         return "Circuit(inputs: ${inputs.size}, outputs: ${outputs.size}, gates: ${gates.size})"
     }
 }
