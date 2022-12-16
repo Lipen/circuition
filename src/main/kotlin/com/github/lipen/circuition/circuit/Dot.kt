@@ -3,15 +3,12 @@ package com.github.lipen.circuition.circuit
 @Suppress("LocalVariableName")
 fun convertCircuitToDot(
     circuit: Circuit,
-    // rankByLayers: Boolean = false,
-    // nodeLabel: Map<String, String> = emptyMap(),
-    // nodeAddStyle: Map<String, String> = emptyMap(),
 ): Sequence<String> = sequence {
     val STYLE_PI = "shape=invtriangle,color=blue" // Primary Input style
     val STYLE_PO = "shape=triangle,color=blue" // Primary Output style
     val STYLE_INPUT = "shape=box" // Input style
     val STYLE_GATE = "shape=rect" // Gate style
-    val STYLE_EDGE = "arrowhead=none" // Positive edge style
+    val STYLE_EDGE = "arrowhead=none" // Edge style
 
     yield("digraph {")
 
@@ -35,11 +32,6 @@ fun convertCircuitToDot(
             is Gate -> STYLE_GATE
         }
         return style
-        // val label = nodeLabel[node.name]
-        // val labelS = if (label == null) "" else ",label=\"${label.replace("\"", "\\\"")}\""
-        // val additionalStyle = nodeAddStyle[node.name]
-        // val addStyleS = if (additionalStyle == null) "" else ",$additionalStyle"
-        // return "$style$labelS$addStyleS"
     }
 
     yield("// Inputs")
@@ -64,15 +56,13 @@ fun convertCircuitToDot(
     yield("// Node connections")
     for (node in circuit.gates) {
         for (arg in node.args) {
-            val style = STYLE_EDGE
-            yield("  \"${node.name}\" -> \"$arg\" [$style];")
+            yield("  \"${node.name}\" -> \"$arg\" [$STYLE_EDGE];")
         }
     }
 
     yield("// Output connections")
     for ((i, node) in circuit.outputs.withIndex()) {
-        val style = STYLE_EDGE
-        yield("  o$i -> \"${node.name}\" [$style];")
+        yield("  o$i -> \"${node.name}\" [$STYLE_EDGE];")
     }
 
     yield("}")
