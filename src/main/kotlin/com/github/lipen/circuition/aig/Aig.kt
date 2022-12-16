@@ -20,8 +20,8 @@ class Aig(
     // TODO: val symbolTable...
 ) {
     init {
-        require(inputs.intersect(andGates).isEmpty())
         require(inputs.size + andGates.size == mapping.size)
+        require(inputs.intersect(andGates).isEmpty())
     }
 
     val size: Int = mapping.size
