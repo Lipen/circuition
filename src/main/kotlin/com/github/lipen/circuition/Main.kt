@@ -1,6 +1,7 @@
 package com.github.lipen.circuition
 
 import com.github.lipen.circuition.aig.parseAig
+import com.github.lipen.circuition.blif.parseBlif
 import com.github.lipen.circuition.circuit.convertCircuitToDot
 import com.github.lipen.circuition.circuit.parseBench
 import okio.buffer
@@ -9,8 +10,8 @@ import kotlin.io.path.Path
 import kotlin.io.path.createDirectories
 
 fun main() {
-    val name = "c17"
-
+    // val name = "c17"
+    val name = "c432"
     println("Name: $name")
 
     val circuit = parseBench("data/examples/bench/$name.bench")
@@ -28,4 +29,9 @@ fun main() {
     println()
     val aig = parseAig("data/examples/aag/$name.aag")
     println("aig = $aig")
+
+    println()
+    // val blif = parseBlif(Path("data/examples/blif/example.blif"))
+    val blif = parseBlif(Path("data/examples/blif/$name.blif"))
+    println("blif = $blif")
 }

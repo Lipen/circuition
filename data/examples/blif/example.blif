@@ -1,0 +1,10 @@
+.model example
+.inputs x \
+y
+.outputs a\
+b\
+ c
+.names x a
+0 1
+.names y b
+.end

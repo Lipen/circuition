@@ -42,5 +42,6 @@ bin/
 .DS_Store
 
 ### Local ###
-data/
-!data/examples/
+/data/*
+!/data/examples/
+stuff/

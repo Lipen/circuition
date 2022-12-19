@@ -1,0 +1,633 @@
+digraph {
+// Primary Inputs
+{ rank=sink
+  i0 [shape=invtriangle,color=blue];
+  i1 [shape=invtriangle,color=blue];
+  i2 [shape=invtriangle,color=blue];
+  i3 [shape=invtriangle,color=blue];
+  i4 [shape=invtriangle,color=blue];
+  i5 [shape=invtriangle,color=blue];
+  i6 [shape=invtriangle,color=blue];
+  i7 [shape=invtriangle,color=blue];
+  i8 [shape=invtriangle,color=blue];
+  i9 [shape=invtriangle,color=blue];
+  i10 [shape=invtriangle,color=blue];
+  i11 [shape=invtriangle,color=blue];
+  i12 [shape=invtriangle,color=blue];
+  i13 [shape=invtriangle,color=blue];
+  i14 [shape=invtriangle,color=blue];
+  i15 [shape=invtriangle,color=blue];
+  i16 [shape=invtriangle,color=blue];
+  i17 [shape=invtriangle,color=blue];
+  i18 [shape=invtriangle,color=blue];
+  i19 [shape=invtriangle,color=blue];
+  i20 [shape=invtriangle,color=blue];
+  i21 [shape=invtriangle,color=blue];
+  i22 [shape=invtriangle,color=blue];
+  i23 [shape=invtriangle,color=blue];
+  i24 [shape=invtriangle,color=blue];
+  i25 [shape=invtriangle,color=blue];
+  i26 [shape=invtriangle,color=blue];
+  i27 [shape=invtriangle,color=blue];
+  i28 [shape=invtriangle,color=blue];
+  i29 [shape=invtriangle,color=blue];
+  i30 [shape=invtriangle,color=blue];
+  i31 [shape=invtriangle,color=blue];
+  i32 [shape=invtriangle,color=blue];
+  i33 [shape=invtriangle,color=blue];
+  i34 [shape=invtriangle,color=blue];
+  i35 [shape=invtriangle,color=blue];
+}
+// Primary Outputs
+{ rank=source
+  o0 [shape=triangle,color=blue];
+  o1 [shape=triangle,color=blue];
+  o2 [shape=triangle,color=blue];
+  o3 [shape=triangle,color=blue];
+  o4 [shape=triangle,color=blue];
+  o5 [shape=triangle,color=blue];
+  o6 [shape=triangle,color=blue];
+}
+// Inputs
+{ rank=same
+  "G1gat" [label="IN:G1gat",shape=box]; // Input(name=G1gat)
+  "G4gat" [label="IN:G4gat",shape=box]; // Input(name=G4gat)
+  "G8gat" [label="IN:G8gat",shape=box]; // Input(name=G8gat)
+  "G11gat" [label="IN:G11gat",shape=box]; // Input(name=G11gat)
+  "G14gat" [label="IN:G14gat",shape=box]; // Input(name=G14gat)
+  "G17gat" [label="IN:G17gat",shape=box]; // Input(name=G17gat)
+  "G21gat" [label="IN:G21gat",shape=box]; // Input(name=G21gat)
+  "G24gat" [label="IN:G24gat",shape=box]; // Input(name=G24gat)
+  "G27gat" [label="IN:G27gat",shape=box]; // Input(name=G27gat)
+  "G30gat" [label="IN:G30gat",shape=box]; // Input(name=G30gat)
+  "G34gat" [label="IN:G34gat",shape=box]; // Input(name=G34gat)
+  "G37gat" [label="IN:G37gat",shape=box]; // Input(name=G37gat)
+  "G40gat" [label="IN:G40gat",shape=box]; // Input(name=G40gat)
+  "G43gat" [label="IN:G43gat",shape=box]; // Input(name=G43gat)
+  "G47gat" [label="IN:G47gat",shape=box]; // Input(name=G47gat)
+  "G50gat" [label="IN:G50gat",shape=box]; // Input(name=G50gat)
+  "G53gat" [label="IN:G53gat",shape=box]; // Input(name=G53gat)
+  "G56gat" [label="IN:G56gat",shape=box]; // Input(name=G56gat)
+  "G60gat" [label="IN:G60gat",shape=box]; // Input(name=G60gat)
+  "G63gat" [label="IN:G63gat",shape=box]; // Input(name=G63gat)
+  "G66gat" [label="IN:G66gat",shape=box]; // Input(name=G66gat)
+  "G69gat" [label="IN:G69gat",shape=box]; // Input(name=G69gat)
+  "G73gat" [label="IN:G73gat",shape=box]; // Input(name=G73gat)
+  "G76gat" [label="IN:G76gat",shape=box]; // Input(name=G76gat)
+  "G79gat" [label="IN:G79gat",shape=box]; // Input(name=G79gat)
+  "G82gat" [label="IN:G82gat",shape=box]; // Input(name=G82gat)
+  "G86gat" [label="IN:G86gat",shape=box]; // Input(name=G86gat)
+  "G89gat" [label="IN:G89gat",shape=box]; // Input(name=G89gat)
+  "G92gat" [label="IN:G92gat",shape=box]; // Input(name=G92gat)
+  "G95gat" [label="IN:G95gat",shape=box]; // Input(name=G95gat)
+  "G99gat" [label="IN:G99gat",shape=box]; // Input(name=G99gat)
+  "G102gat" [label="IN:G102gat",shape=box]; // Input(name=G102gat)
+  "G105gat" [label="IN:G105gat",shape=box]; // Input(name=G105gat)
+  "G108gat" [label="IN:G108gat",shape=box]; // Input(name=G108gat)
+  "G112gat" [label="IN:G112gat",shape=box]; // Input(name=G112gat)
+  "G115gat" [label="IN:G115gat",shape=box]; // Input(name=G115gat)
+}
+// Gates
+  "G118gat" [label="NOT:G118gat",shape=rect]; // Gate(name=G118gat, type=NOT, args=[G1gat])
+  "G119gat" [label="NOT:G119gat",shape=rect]; // Gate(name=G119gat, type=NOT, args=[G4gat])
+  "G122gat" [label="NOT:G122gat",shape=rect]; // Gate(name=G122gat, type=NOT, args=[G11gat])
+  "G123gat" [label="NOT:G123gat",shape=rect]; // Gate(name=G123gat, type=NOT, args=[G17gat])
+  "G126gat" [label="NOT:G126gat",shape=rect]; // Gate(name=G126gat, type=NOT, args=[G24gat])
+  "G127gat" [label="NOT:G127gat",shape=rect]; // Gate(name=G127gat, type=NOT, args=[G30gat])
+  "G130gat" [label="NOT:G130gat",shape=rect]; // Gate(name=G130gat, type=NOT, args=[G37gat])
+  "G131gat" [label="NOT:G131gat",shape=rect]; // Gate(name=G131gat, type=NOT, args=[G43gat])
+  "G134gat" [label="NOT:G134gat",shape=rect]; // Gate(name=G134gat, type=NOT, args=[G50gat])
+  "G135gat" [label="NOT:G135gat",shape=rect]; // Gate(name=G135gat, type=NOT, args=[G56gat])
+  "G138gat" [label="NOT:G138gat",shape=rect]; // Gate(name=G138gat, type=NOT, args=[G63gat])
+  "G139gat" [label="NOT:G139gat",shape=rect]; // Gate(name=G139gat, type=NOT, args=[G69gat])
+  "G142gat" [label="NOT:G142gat",shape=rect]; // Gate(name=G142gat, type=NOT, args=[G76gat])
+  "G143gat" [label="NOT:G143gat",shape=rect]; // Gate(name=G143gat, type=NOT, args=[G82gat])
+  "G146gat" [label="NOT:G146gat",shape=rect]; // Gate(name=G146gat, type=NOT, args=[G89gat])
+  "G147gat" [label="NOT:G147gat",shape=rect]; // Gate(name=G147gat, type=NOT, args=[G95gat])
+  "G150gat" [label="NOT:G150gat",shape=rect]; // Gate(name=G150gat, type=NOT, args=[G102gat])
+  "G151gat" [label="NOT:G151gat",shape=rect]; // Gate(name=G151gat, type=NOT, args=[G108gat])
+  "G154gat" [label="NAND:G154gat",shape=rect]; // Gate(name=G154gat, type=NAND, args=[G118gat, G4gat])
+  "G157gat" [label="NOR:G157gat",shape=rect]; // Gate(name=G157gat, type=NOR, args=[G8gat, G119gat])
+  "G158gat" [label="NOR:G158gat",shape=rect]; // Gate(name=G158gat, type=NOR, args=[G14gat, G119gat])
+  "G159gat" [label="NAND:G159gat",shape=rect]; // Gate(name=G159gat, type=NAND, args=[G122gat, G17gat])
+  "G162gat" [label="NAND:G162gat",shape=rect]; // Gate(name=G162gat, type=NAND, args=[G126gat, G30gat])
+  "G165gat" [label="NAND:G165gat",shape=rect]; // Gate(name=G165gat, type=NAND, args=[G130gat, G43gat])
+  "G168gat" [label="NAND:G168gat",shape=rect]; // Gate(name=G168gat, type=NAND, args=[G134gat, G56gat])
+  "G171gat" [label="NAND:G171gat",shape=rect]; // Gate(name=G171gat, type=NAND, args=[G138gat, G69gat])
+  "G174gat" [label="NAND:G174gat",shape=rect]; // Gate(name=G174gat, type=NAND, args=[G142gat, G82gat])
+  "G177gat" [label="NAND:G177gat",shape=rect]; // Gate(name=G177gat, type=NAND, args=[G146gat, G95gat])
+  "G180gat" [label="NAND:G180gat",shape=rect]; // Gate(name=G180gat, type=NAND, args=[G150gat, G108gat])
+  "G183gat" [label="NOR:G183gat",shape=rect]; // Gate(name=G183gat, type=NOR, args=[G21gat, G123gat])
+  "G184gat" [label="NOR:G184gat",shape=rect]; // Gate(name=G184gat, type=NOR, args=[G27gat, G123gat])
+  "G185gat" [label="NOR:G185gat",shape=rect]; // Gate(name=G185gat, type=NOR, args=[G34gat, G127gat])
+  "G186gat" [label="NOR:G186gat",shape=rect]; // Gate(name=G186gat, type=NOR, args=[G40gat, G127gat])
+  "G187gat" [label="NOR:G187gat",shape=rect]; // Gate(name=G187gat, type=NOR, args=[G47gat, G131gat])
+  "G188gat" [label="NOR:G188gat",shape=rect]; // Gate(name=G188gat, type=NOR, args=[G53gat, G131gat])
+  "G189gat" [label="NOR:G189gat",shape=rect]; // Gate(name=G189gat, type=NOR, args=[G60gat, G135gat])
+  "G190gat" [label="NOR:G190gat",shape=rect]; // Gate(name=G190gat, type=NOR, args=[G66gat, G135gat])
+  "G191gat" [label="NOR:G191gat",shape=rect]; // Gate(name=G191gat, type=NOR, args=[G73gat, G139gat])
+  "G192gat" [label="NOR:G192gat",shape=rect]; // Gate(name=G192gat, type=NOR, args=[G79gat, G139gat])
+  "G193gat" [label="NOR:G193gat",shape=rect]; // Gate(name=G193gat, type=NOR, args=[G86gat, G143gat])
+  "G194gat" [label="NOR:G194gat",shape=rect]; // Gate(name=G194gat, type=NOR, args=[G92gat, G143gat])
+  "G195gat" [label="NOR:G195gat",shape=rect]; // Gate(name=G195gat, type=NOR, args=[G99gat, G147gat])
+  "G196gat" [label="NOR:G196gat",shape=rect]; // Gate(name=G196gat, type=NOR, args=[G105gat, G147gat])
+  "G197gat" [label="NOR:G197gat",shape=rect]; // Gate(name=G197gat, type=NOR, args=[G112gat, G151gat])
+  "G198gat" [label="NOR:G198gat",shape=rect]; // Gate(name=G198gat, type=NOR, args=[G115gat, G151gat])
+  "G199gat" [label="AND:G199gat",shape=rect]; // Gate(name=G199gat, type=AND, args=[G154gat, G159gat, G162gat, G165gat, G168gat, G171gat, G174gat, G177gat, G180gat])
+  "G203gat" [label="NOT:G203gat",shape=rect]; // Gate(name=G203gat, type=NOT, args=[G199gat])
+  "G213gat" [label="NOT:G213gat",shape=rect]; // Gate(name=G213gat, type=NOT, args=[G199gat])
+  "G223gat" [label="NOT:G223gat",shape=rect]; // Gate(name=G223gat, type=NOT, args=[G199gat])
+  "G224gat" [label="XOR:G224gat",shape=rect]; // Gate(name=G224gat, type=XOR, args=[G203gat, G154gat])
+  "G227gat" [label="XOR:G227gat",shape=rect]; // Gate(name=G227gat, type=XOR, args=[G203gat, G159gat])
+  "G230gat" [label="XOR:G230gat",shape=rect]; // Gate(name=G230gat, type=XOR, args=[G203gat, G162gat])
+  "G233gat" [label="XOR:G233gat",shape=rect]; // Gate(name=G233gat, type=XOR, args=[G203gat, G165gat])
+  "G236gat" [label="XOR:G236gat",shape=rect]; // Gate(name=G236gat, type=XOR, args=[G203gat, G168gat])
+  "G239gat" [label="XOR:G239gat",shape=rect]; // Gate(name=G239gat, type=XOR, args=[G203gat, G171gat])
+  "G242gat" [label="NAND:G242gat",shape=rect]; // Gate(name=G242gat, type=NAND, args=[G1gat, G213gat])
+  "G243gat" [label="XOR:G243gat",shape=rect]; // Gate(name=G243gat, type=XOR, args=[G203gat, G174gat])
+  "G246gat" [label="NAND:G246gat",shape=rect]; // Gate(name=G246gat, type=NAND, args=[G213gat, G11gat])
+  "G247gat" [label="XOR:G247gat",shape=rect]; // Gate(name=G247gat, type=XOR, args=[G203gat, G177gat])
+  "G250gat" [label="NAND:G250gat",shape=rect]; // Gate(name=G250gat, type=NAND, args=[G213gat, G24gat])
+  "G251gat" [label="XOR:G251gat",shape=rect]; // Gate(name=G251gat, type=XOR, args=[G203gat, G180gat])
+  "G254gat" [label="NAND:G254gat",shape=rect]; // Gate(name=G254gat, type=NAND, args=[G213gat, G37gat])
+  "G255gat" [label="NAND:G255gat",shape=rect]; // Gate(name=G255gat, type=NAND, args=[G213gat, G50gat])
+  "G256gat" [label="NAND:G256gat",shape=rect]; // Gate(name=G256gat, type=NAND, args=[G213gat, G63gat])
+  "G257gat" [label="NAND:G257gat",shape=rect]; // Gate(name=G257gat, type=NAND, args=[G213gat, G76gat])
+  "G258gat" [label="NAND:G258gat",shape=rect]; // Gate(name=G258gat, type=NAND, args=[G213gat, G89gat])
+  "G259gat" [label="NAND:G259gat",shape=rect]; // Gate(name=G259gat, type=NAND, args=[G213gat, G102gat])
+  "G260gat" [label="NAND:G260gat",shape=rect]; // Gate(name=G260gat, type=NAND, args=[G224gat, G157gat])
+  "G263gat" [label="NAND:G263gat",shape=rect]; // Gate(name=G263gat, type=NAND, args=[G224gat, G158gat])
+  "G264gat" [label="NAND:G264gat",shape=rect]; // Gate(name=G264gat, type=NAND, args=[G227gat, G183gat])
+  "G267gat" [label="NAND:G267gat",shape=rect]; // Gate(name=G267gat, type=NAND, args=[G230gat, G185gat])
+  "G270gat" [label="NAND:G270gat",shape=rect]; // Gate(name=G270gat, type=NAND, args=[G233gat, G187gat])
+  "G273gat" [label="NAND:G273gat",shape=rect]; // Gate(name=G273gat, type=NAND, args=[G236gat, G189gat])
+  "G276gat" [label="NAND:G276gat",shape=rect]; // Gate(name=G276gat, type=NAND, args=[G239gat, G191gat])
+  "G279gat" [label="NAND:G279gat",shape=rect]; // Gate(name=G279gat, type=NAND, args=[G243gat, G193gat])
+  "G282gat" [label="NAND:G282gat",shape=rect]; // Gate(name=G282gat, type=NAND, args=[G247gat, G195gat])
+  "G285gat" [label="NAND:G285gat",shape=rect]; // Gate(name=G285gat, type=NAND, args=[G251gat, G197gat])
+  "G288gat" [label="NAND:G288gat",shape=rect]; // Gate(name=G288gat, type=NAND, args=[G227gat, G184gat])
+  "G289gat" [label="NAND:G289gat",shape=rect]; // Gate(name=G289gat, type=NAND, args=[G230gat, G186gat])
+  "G290gat" [label="NAND:G290gat",shape=rect]; // Gate(name=G290gat, type=NAND, args=[G233gat, G188gat])
+  "G291gat" [label="NAND:G291gat",shape=rect]; // Gate(name=G291gat, type=NAND, args=[G236gat, G190gat])
+  "G292gat" [label="NAND:G292gat",shape=rect]; // Gate(name=G292gat, type=NAND, args=[G239gat, G192gat])
+  "G293gat" [label="NAND:G293gat",shape=rect]; // Gate(name=G293gat, type=NAND, args=[G243gat, G194gat])
+  "G294gat" [label="NAND:G294gat",shape=rect]; // Gate(name=G294gat, type=NAND, args=[G247gat, G196gat])
+  "G295gat" [label="NAND:G295gat",shape=rect]; // Gate(name=G295gat, type=NAND, args=[G251gat, G198gat])
+  "G296gat" [label="AND:G296gat",shape=rect]; // Gate(name=G296gat, type=AND, args=[G260gat, G264gat, G267gat, G270gat, G273gat, G276gat, G279gat, G282gat, G285gat])
+  "G300gat" [label="NOT:G300gat",shape=rect]; // Gate(name=G300gat, type=NOT, args=[G263gat])
+  "G301gat" [label="NOT:G301gat",shape=rect]; // Gate(name=G301gat, type=NOT, args=[G288gat])
+  "G302gat" [label="NOT:G302gat",shape=rect]; // Gate(name=G302gat, type=NOT, args=[G289gat])
+  "G303gat" [label="NOT:G303gat",shape=rect]; // Gate(name=G303gat, type=NOT, args=[G290gat])
+  "G304gat" [label="NOT:G304gat",shape=rect]; // Gate(name=G304gat, type=NOT, args=[G291gat])
+  "G305gat" [label="NOT:G305gat",shape=rect]; // Gate(name=G305gat, type=NOT, args=[G292gat])
+  "G306gat" [label="NOT:G306gat",shape=rect]; // Gate(name=G306gat, type=NOT, args=[G293gat])
+  "G307gat" [label="NOT:G307gat",shape=rect]; // Gate(name=G307gat, type=NOT, args=[G294gat])
+  "G308gat" [label="NOT:G308gat",shape=rect]; // Gate(name=G308gat, type=NOT, args=[G295gat])
+  "G309gat" [label="NOT:G309gat",shape=rect]; // Gate(name=G309gat, type=NOT, args=[G296gat])
+  "G319gat" [label="NOT:G319gat",shape=rect]; // Gate(name=G319gat, type=NOT, args=[G296gat])
+  "G329gat" [label="NOT:G329gat",shape=rect]; // Gate(name=G329gat, type=NOT, args=[G296gat])
+  "G330gat" [label="XOR:G330gat",shape=rect]; // Gate(name=G330gat, type=XOR, args=[G309gat, G260gat])
+  "G331gat" [label="XOR:G331gat",shape=rect]; // Gate(name=G331gat, type=XOR, args=[G309gat, G264gat])
+  "G332gat" [label="XOR:G332gat",shape=rect]; // Gate(name=G332gat, type=XOR, args=[G309gat, G267gat])
+  "G333gat" [label="XOR:G333gat",shape=rect]; // Gate(name=G333gat, type=XOR, args=[G309gat, G270gat])
+  "G334gat" [label="NAND:G334gat",shape=rect]; // Gate(name=G334gat, type=NAND, args=[G8gat, G319gat])
+  "G335gat" [label="XOR:G335gat",shape=rect]; // Gate(name=G335gat, type=XOR, args=[G309gat, G273gat])
+  "G336gat" [label="NAND:G336gat",shape=rect]; // Gate(name=G336gat, type=NAND, args=[G319gat, G21gat])
+  "G337gat" [label="XOR:G337gat",shape=rect]; // Gate(name=G337gat, type=XOR, args=[G309gat, G276gat])
+  "G338gat" [label="NAND:G338gat",shape=rect]; // Gate(name=G338gat, type=NAND, args=[G319gat, G34gat])
+  "G339gat" [label="XOR:G339gat",shape=rect]; // Gate(name=G339gat, type=XOR, args=[G309gat, G279gat])
+  "G340gat" [label="NAND:G340gat",shape=rect]; // Gate(name=G340gat, type=NAND, args=[G319gat, G47gat])
+  "G341gat" [label="XOR:G341gat",shape=rect]; // Gate(name=G341gat, type=XOR, args=[G309gat, G282gat])
+  "G342gat" [label="NAND:G342gat",shape=rect]; // Gate(name=G342gat, type=NAND, args=[G319gat, G60gat])
+  "G343gat" [label="XOR:G343gat",shape=rect]; // Gate(name=G343gat, type=XOR, args=[G309gat, G285gat])
+  "G344gat" [label="NAND:G344gat",shape=rect]; // Gate(name=G344gat, type=NAND, args=[G319gat, G73gat])
+  "G345gat" [label="NAND:G345gat",shape=rect]; // Gate(name=G345gat, type=NAND, args=[G319gat, G86gat])
+  "G346gat" [label="NAND:G346gat",shape=rect]; // Gate(name=G346gat, type=NAND, args=[G319gat, G99gat])
+  "G347gat" [label="NAND:G347gat",shape=rect]; // Gate(name=G347gat, type=NAND, args=[G319gat, G112gat])
+  "G348gat" [label="NAND:G348gat",shape=rect]; // Gate(name=G348gat, type=NAND, args=[G330gat, G300gat])
+  "G349gat" [label="NAND:G349gat",shape=rect]; // Gate(name=G349gat, type=NAND, args=[G331gat, G301gat])
+  "G350gat" [label="NAND:G350gat",shape=rect]; // Gate(name=G350gat, type=NAND, args=[G332gat, G302gat])
+  "G351gat" [label="NAND:G351gat",shape=rect]; // Gate(name=G351gat, type=NAND, args=[G333gat, G303gat])
+  "G352gat" [label="NAND:G352gat",shape=rect]; // Gate(name=G352gat, type=NAND, args=[G335gat, G304gat])
+  "G353gat" [label="NAND:G353gat",shape=rect]; // Gate(name=G353gat, type=NAND, args=[G337gat, G305gat])
+  "G354gat" [label="NAND:G354gat",shape=rect]; // Gate(name=G354gat, type=NAND, args=[G339gat, G306gat])
+  "G355gat" [label="NAND:G355gat",shape=rect]; // Gate(name=G355gat, type=NAND, args=[G341gat, G307gat])
+  "G356gat" [label="NAND:G356gat",shape=rect]; // Gate(name=G356gat, type=NAND, args=[G343gat, G308gat])
+  "G357gat" [label="AND:G357gat",shape=rect]; // Gate(name=G357gat, type=AND, args=[G348gat, G349gat, G350gat, G351gat, G352gat, G353gat, G354gat, G355gat, G356gat])
+  "G360gat" [label="NOT:G360gat",shape=rect]; // Gate(name=G360gat, type=NOT, args=[G357gat])
+  "G370gat" [label="NOT:G370gat",shape=rect]; // Gate(name=G370gat, type=NOT, args=[G357gat])
+  "G371gat" [label="NAND:G371gat",shape=rect]; // Gate(name=G371gat, type=NAND, args=[G14gat, G360gat])
+  "G372gat" [label="NAND:G372gat",shape=rect]; // Gate(name=G372gat, type=NAND, args=[G360gat, G27gat])
+  "G373gat" [label="NAND:G373gat",shape=rect]; // Gate(name=G373gat, type=NAND, args=[G360gat, G40gat])
+  "G374gat" [label="NAND:G374gat",shape=rect]; // Gate(name=G374gat, type=NAND, args=[G360gat, G53gat])
+  "G375gat" [label="NAND:G375gat",shape=rect]; // Gate(name=G375gat, type=NAND, args=[G360gat, G66gat])
+  "G376gat" [label="NAND:G376gat",shape=rect]; // Gate(name=G376gat, type=NAND, args=[G360gat, G79gat])
+  "G377gat" [label="NAND:G377gat",shape=rect]; // Gate(name=G377gat, type=NAND, args=[G360gat, G92gat])
+  "G378gat" [label="NAND:G378gat",shape=rect]; // Gate(name=G378gat, type=NAND, args=[G360gat, G105gat])
+  "G379gat" [label="NAND:G379gat",shape=rect]; // Gate(name=G379gat, type=NAND, args=[G360gat, G115gat])
+  "G380gat" [label="NAND:G380gat",shape=rect]; // Gate(name=G380gat, type=NAND, args=[G4gat, G242gat, G334gat, G371gat])
+  "G381gat" [label="NAND:G381gat",shape=rect]; // Gate(name=G381gat, type=NAND, args=[G246gat, G336gat, G372gat, G17gat])
+  "G386gat" [label="NAND:G386gat",shape=rect]; // Gate(name=G386gat, type=NAND, args=[G250gat, G338gat, G373gat, G30gat])
+  "G393gat" [label="NAND:G393gat",shape=rect]; // Gate(name=G393gat, type=NAND, args=[G254gat, G340gat, G374gat, G43gat])
+  "G399gat" [label="NAND:G399gat",shape=rect]; // Gate(name=G399gat, type=NAND, args=[G255gat, G342gat, G375gat, G56gat])
+  "G404gat" [label="NAND:G404gat",shape=rect]; // Gate(name=G404gat, type=NAND, args=[G256gat, G344gat, G376gat, G69gat])
+  "G407gat" [label="NAND:G407gat",shape=rect]; // Gate(name=G407gat, type=NAND, args=[G257gat, G345gat, G377gat, G82gat])
+  "G411gat" [label="NAND:G411gat",shape=rect]; // Gate(name=G411gat, type=NAND, args=[G258gat, G346gat, G378gat, G95gat])
+  "G414gat" [label="NAND:G414gat",shape=rect]; // Gate(name=G414gat, type=NAND, args=[G259gat, G347gat, G379gat, G108gat])
+  "G415gat" [label="NOT:G415gat",shape=rect]; // Gate(name=G415gat, type=NOT, args=[G380gat])
+  "G416gat" [label="AND:G416gat",shape=rect]; // Gate(name=G416gat, type=AND, args=[G381gat, G386gat, G393gat, G399gat, G404gat, G407gat, G411gat, G414gat])
+  "G417gat" [label="NOT:G417gat",shape=rect]; // Gate(name=G417gat, type=NOT, args=[G393gat])
+  "G418gat" [label="NOT:G418gat",shape=rect]; // Gate(name=G418gat, type=NOT, args=[G404gat])
+  "G419gat" [label="NOT:G419gat",shape=rect]; // Gate(name=G419gat, type=NOT, args=[G407gat])
+  "G420gat" [label="NOT:G420gat",shape=rect]; // Gate(name=G420gat, type=NOT, args=[G411gat])
+  "G421gat" [label="NOR:G421gat",shape=rect]; // Gate(name=G421gat, type=NOR, args=[G415gat, G416gat])
+  "G422gat" [label="NAND:G422gat",shape=rect]; // Gate(name=G422gat, type=NAND, args=[G386gat, G417gat])
+  "G425gat" [label="NAND:G425gat",shape=rect]; // Gate(name=G425gat, type=NAND, args=[G386gat, G393gat, G418gat, G399gat])
+  "G428gat" [label="NAND:G428gat",shape=rect]; // Gate(name=G428gat, type=NAND, args=[G399gat, G393gat, G419gat])
+  "G429gat" [label="NAND:G429gat",shape=rect]; // Gate(name=G429gat, type=NAND, args=[G386gat, G393gat, G407gat, G420gat])
+  "G430gat" [label="NAND:G430gat",shape=rect]; // Gate(name=G430gat, type=NAND, args=[G381gat, G386gat, G422gat, G399gat])
+  "G431gat" [label="NAND:G431gat",shape=rect]; // Gate(name=G431gat, type=NAND, args=[G381gat, G386gat, G425gat, G428gat])
+  "G432gat" [label="NAND:G432gat",shape=rect]; // Gate(name=G432gat, type=NAND, args=[G381gat, G422gat, G425gat, G429gat])
+// Input connections
+  "G1gat" -> i0 [arrowhead=none];
+  "G4gat" -> i1 [arrowhead=none];
+  "G8gat" -> i2 [arrowhead=none];
+  "G11gat" -> i3 [arrowhead=none];
+  "G14gat" -> i4 [arrowhead=none];
+  "G17gat" -> i5 [arrowhead=none];
+  "G21gat" -> i6 [arrowhead=none];
+  "G24gat" -> i7 [arrowhead=none];
+  "G27gat" -> i8 [arrowhead=none];
+  "G30gat" -> i9 [arrowhead=none];
+  "G34gat" -> i10 [arrowhead=none];
+  "G37gat" -> i11 [arrowhead=none];
+  "G40gat" -> i12 [arrowhead=none];
+  "G43gat" -> i13 [arrowhead=none];
+  "G47gat" -> i14 [arrowhead=none];
+  "G50gat" -> i15 [arrowhead=none];
+  "G53gat" -> i16 [arrowhead=none];
+  "G56gat" -> i17 [arrowhead=none];
+  "G60gat" -> i18 [arrowhead=none];
+  "G63gat" -> i19 [arrowhead=none];
+  "G66gat" -> i20 [arrowhead=none];
+  "G69gat" -> i21 [arrowhead=none];
+  "G73gat" -> i22 [arrowhead=none];
+  "G76gat" -> i23 [arrowhead=none];
+  "G79gat" -> i24 [arrowhead=none];
+  "G82gat" -> i25 [arrowhead=none];
+  "G86gat" -> i26 [arrowhead=none];
+  "G89gat" -> i27 [arrowhead=none];
+  "G92gat" -> i28 [arrowhead=none];
+  "G95gat" -> i29 [arrowhead=none];
+  "G99gat" -> i30 [arrowhead=none];
+  "G102gat" -> i31 [arrowhead=none];
+  "G105gat" -> i32 [arrowhead=none];
+  "G108gat" -> i33 [arrowhead=none];
+  "G112gat" -> i34 [arrowhead=none];
+  "G115gat" -> i35 [arrowhead=none];
+// Node connections
+  "G118gat" -> "G1gat" [arrowhead=none];
+  "G119gat" -> "G4gat" [arrowhead=none];
+  "G122gat" -> "G11gat" [arrowhead=none];
+  "G123gat" -> "G17gat" [arrowhead=none];
+  "G126gat" -> "G24gat" [arrowhead=none];
+  "G127gat" -> "G30gat" [arrowhead=none];
+  "G130gat" -> "G37gat" [arrowhead=none];
+  "G131gat" -> "G43gat" [arrowhead=none];
+  "G134gat" -> "G50gat" [arrowhead=none];
+  "G135gat" -> "G56gat" [arrowhead=none];
+  "G138gat" -> "G63gat" [arrowhead=none];
+  "G139gat" -> "G69gat" [arrowhead=none];
+  "G142gat" -> "G76gat" [arrowhead=none];
+  "G143gat" -> "G82gat" [arrowhead=none];
+  "G146gat" -> "G89gat" [arrowhead=none];
+  "G147gat" -> "G95gat" [arrowhead=none];
+  "G150gat" -> "G102gat" [arrowhead=none];
+  "G151gat" -> "G108gat" [arrowhead=none];
+  "G154gat" -> "G118gat" [arrowhead=none];
+  "G154gat" -> "G4gat" [arrowhead=none];
+  "G157gat" -> "G8gat" [arrowhead=none];
+  "G157gat" -> "G119gat" [arrowhead=none];
+  "G158gat" -> "G14gat" [arrowhead=none];
+  "G158gat" -> "G119gat" [arrowhead=none];
+  "G159gat" -> "G122gat" [arrowhead=none];
+  "G159gat" -> "G17gat" [arrowhead=none];
+  "G162gat" -> "G126gat" [arrowhead=none];
+  "G162gat" -> "G30gat" [arrowhead=none];
+  "G165gat" -> "G130gat" [arrowhead=none];
+  "G165gat" -> "G43gat" [arrowhead=none];
+  "G168gat" -> "G134gat" [arrowhead=none];
+  "G168gat" -> "G56gat" [arrowhead=none];
+  "G171gat" -> "G138gat" [arrowhead=none];
+  "G171gat" -> "G69gat" [arrowhead=none];
+  "G174gat" -> "G142gat" [arrowhead=none];
+  "G174gat" -> "G82gat" [arrowhead=none];
+  "G177gat" -> "G146gat" [arrowhead=none];
+  "G177gat" -> "G95gat" [arrowhead=none];
+  "G180gat" -> "G150gat" [arrowhead=none];
+  "G180gat" -> "G108gat" [arrowhead=none];
+  "G183gat" -> "G21gat" [arrowhead=none];
+  "G183gat" -> "G123gat" [arrowhead=none];
+  "G184gat" -> "G27gat" [arrowhead=none];
+  "G184gat" -> "G123gat" [arrowhead=none];
+  "G185gat" -> "G34gat" [arrowhead=none];
+  "G185gat" -> "G127gat" [arrowhead=none];
+  "G186gat" -> "G40gat" [arrowhead=none];
+  "G186gat" -> "G127gat" [arrowhead=none];
+  "G187gat" -> "G47gat" [arrowhead=none];
+  "G187gat" -> "G131gat" [arrowhead=none];
+  "G188gat" -> "G53gat" [arrowhead=none];
+  "G188gat" -> "G131gat" [arrowhead=none];
+  "G189gat" -> "G60gat" [arrowhead=none];
+  "G189gat" -> "G135gat" [arrowhead=none];
+  "G190gat" -> "G66gat" [arrowhead=none];
+  "G190gat" -> "G135gat" [arrowhead=none];
+  "G191gat" -> "G73gat" [arrowhead=none];
+  "G191gat" -> "G139gat" [arrowhead=none];
+  "G192gat" -> "G79gat" [arrowhead=none];
+  "G192gat" -> "G139gat" [arrowhead=none];
+  "G193gat" -> "G86gat" [arrowhead=none];
+  "G193gat" -> "G143gat" [arrowhead=none];
+  "G194gat" -> "G92gat" [arrowhead=none];
+  "G194gat" -> "G143gat" [arrowhead=none];
+  "G195gat" -> "G99gat" [arrowhead=none];
+  "G195gat" -> "G147gat" [arrowhead=none];
+  "G196gat" -> "G105gat" [arrowhead=none];
+  "G196gat" -> "G147gat" [arrowhead=none];
+  "G197gat" -> "G112gat" [arrowhead=none];
+  "G197gat" -> "G151gat" [arrowhead=none];
+  "G198gat" -> "G115gat" [arrowhead=none];
+  "G198gat" -> "G151gat" [arrowhead=none];
+  "G199gat" -> "G154gat" [arrowhead=none];
+  "G199gat" -> "G159gat" [arrowhead=none];
+  "G199gat" -> "G162gat" [arrowhead=none];
+  "G199gat" -> "G165gat" [arrowhead=none];
+  "G199gat" -> "G168gat" [arrowhead=none];
+  "G199gat" -> "G171gat" [arrowhead=none];
+  "G199gat" -> "G174gat" [arrowhead=none];
+  "G199gat" -> "G177gat" [arrowhead=none];
+  "G199gat" -> "G180gat" [arrowhead=none];
+  "G203gat" -> "G199gat" [arrowhead=none];
+  "G213gat" -> "G199gat" [arrowhead=none];
+  "G223gat" -> "G199gat" [arrowhead=none];
+  "G224gat" -> "G203gat" [arrowhead=none];
+  "G224gat" -> "G154gat" [arrowhead=none];
+  "G227gat" -> "G203gat" [arrowhead=none];
+  "G227gat" -> "G159gat" [arrowhead=none];
+  "G230gat" -> "G203gat" [arrowhead=none];
+  "G230gat" -> "G162gat" [arrowhead=none];
+  "G233gat" -> "G203gat" [arrowhead=none];
+  "G233gat" -> "G165gat" [arrowhead=none];
+  "G236gat" -> "G203gat" [arrowhead=none];
+  "G236gat" -> "G168gat" [arrowhead=none];
+  "G239gat" -> "G203gat" [arrowhead=none];
+  "G239gat" -> "G171gat" [arrowhead=none];
+  "G242gat" -> "G1gat" [arrowhead=none];
+  "G242gat" -> "G213gat" [arrowhead=none];
+  "G243gat" -> "G203gat" [arrowhead=none];
+  "G243gat" -> "G174gat" [arrowhead=none];
+  "G246gat" -> "G213gat" [arrowhead=none];
+  "G246gat" -> "G11gat" [arrowhead=none];
+  "G247gat" -> "G203gat" [arrowhead=none];
+  "G247gat" -> "G177gat" [arrowhead=none];
+  "G250gat" -> "G213gat" [arrowhead=none];
+  "G250gat" -> "G24gat" [arrowhead=none];
+  "G251gat" -> "G203gat" [arrowhead=none];
+  "G251gat" -> "G180gat" [arrowhead=none];
+  "G254gat" -> "G213gat" [arrowhead=none];
+  "G254gat" -> "G37gat" [arrowhead=none];
+  "G255gat" -> "G213gat" [arrowhead=none];
+  "G255gat" -> "G50gat" [arrowhead=none];
+  "G256gat" -> "G213gat" [arrowhead=none];
+  "G256gat" -> "G63gat" [arrowhead=none];
+  "G257gat" -> "G213gat" [arrowhead=none];
+  "G257gat" -> "G76gat" [arrowhead=none];
+  "G258gat" -> "G213gat" [arrowhead=none];
+  "G258gat" -> "G89gat" [arrowhead=none];
+  "G259gat" -> "G213gat" [arrowhead=none];
+  "G259gat" -> "G102gat" [arrowhead=none];
+  "G260gat" -> "G224gat" [arrowhead=none];
+  "G260gat" -> "G157gat" [arrowhead=none];
+  "G263gat" -> "G224gat" [arrowhead=none];
+  "G263gat" -> "G158gat" [arrowhead=none];
+  "G264gat" -> "G227gat" [arrowhead=none];
+  "G264gat" -> "G183gat" [arrowhead=none];
+  "G267gat" -> "G230gat" [arrowhead=none];
+  "G267gat" -> "G185gat" [arrowhead=none];
+  "G270gat" -> "G233gat" [arrowhead=none];
+  "G270gat" -> "G187gat" [arrowhead=none];
+  "G273gat" -> "G236gat" [arrowhead=none];
+  "G273gat" -> "G189gat" [arrowhead=none];
+  "G276gat" -> "G239gat" [arrowhead=none];
+  "G276gat" -> "G191gat" [arrowhead=none];
+  "G279gat" -> "G243gat" [arrowhead=none];
+  "G279gat" -> "G193gat" [arrowhead=none];
+  "G282gat" -> "G247gat" [arrowhead=none];
+  "G282gat" -> "G195gat" [arrowhead=none];
+  "G285gat" -> "G251gat" [arrowhead=none];
+  "G285gat" -> "G197gat" [arrowhead=none];
+  "G288gat" -> "G227gat" [arrowhead=none];
+  "G288gat" -> "G184gat" [arrowhead=none];
+  "G289gat" -> "G230gat" [arrowhead=none];
+  "G289gat" -> "G186gat" [arrowhead=none];
+  "G290gat" -> "G233gat" [arrowhead=none];
+  "G290gat" -> "G188gat" [arrowhead=none];
+  "G291gat" -> "G236gat" [arrowhead=none];
+  "G291gat" -> "G190gat" [arrowhead=none];
+  "G292gat" -> "G239gat" [arrowhead=none];
+  "G292gat" -> "G192gat" [arrowhead=none];
+  "G293gat" -> "G243gat" [arrowhead=none];
+  "G293gat" -> "G194gat" [arrowhead=none];
+  "G294gat" -> "G247gat" [arrowhead=none];
+  "G294gat" -> "G196gat" [arrowhead=none];
+  "G295gat" -> "G251gat" [arrowhead=none];
+  "G295gat" -> "G198gat" [arrowhead=none];
+  "G296gat" -> "G260gat" [arrowhead=none];
+  "G296gat" -> "G264gat" [arrowhead=none];
+  "G296gat" -> "G267gat" [arrowhead=none];
+  "G296gat" -> "G270gat" [arrowhead=none];
+  "G296gat" -> "G273gat" [arrowhead=none];
+  "G296gat" -> "G276gat" [arrowhead=none];
+  "G296gat" -> "G279gat" [arrowhead=none];
+  "G296gat" -> "G282gat" [arrowhead=none];
+  "G296gat" -> "G285gat" [arrowhead=none];
+  "G300gat" -> "G263gat" [arrowhead=none];
+  "G301gat" -> "G288gat" [arrowhead=none];
+  "G302gat" -> "G289gat" [arrowhead=none];
+  "G303gat" -> "G290gat" [arrowhead=none];
+  "G304gat" -> "G291gat" [arrowhead=none];
+  "G305gat" -> "G292gat" [arrowhead=none];
+  "G306gat" -> "G293gat" [arrowhead=none];
+  "G307gat" -> "G294gat" [arrowhead=none];
+  "G308gat" -> "G295gat" [arrowhead=none];
+  "G309gat" -> "G296gat" [arrowhead=none];
+  "G319gat" -> "G296gat" [arrowhead=none];
+  "G329gat" -> "G296gat" [arrowhead=none];
+  "G330gat" -> "G309gat" [arrowhead=none];
+  "G330gat" -> "G260gat" [arrowhead=none];
+  "G331gat" -> "G309gat" [arrowhead=none];
+  "G331gat" -> "G264gat" [arrowhead=none];
+  "G332gat" -> "G309gat" [arrowhead=none];
+  "G332gat" -> "G267gat" [arrowhead=none];
+  "G333gat" -> "G309gat" [arrowhead=none];
+  "G333gat" -> "G270gat" [arrowhead=none];
+  "G334gat" -> "G8gat" [arrowhead=none];
+  "G334gat" -> "G319gat" [arrowhead=none];
+  "G335gat" -> "G309gat" [arrowhead=none];
+  "G335gat" -> "G273gat" [arrowhead=none];
+  "G336gat" -> "G319gat" [arrowhead=none];
+  "G336gat" -> "G21gat" [arrowhead=none];
+  "G337gat" -> "G309gat" [arrowhead=none];
+  "G337gat" -> "G276gat" [arrowhead=none];
+  "G338gat" -> "G319gat" [arrowhead=none];
+  "G338gat" -> "G34gat" [arrowhead=none];
+  "G339gat" -> "G309gat" [arrowhead=none];
+  "G339gat" -> "G279gat" [arrowhead=none];
+  "G340gat" -> "G319gat" [arrowhead=none];
+  "G340gat" -> "G47gat" [arrowhead=none];
+  "G341gat" -> "G309gat" [arrowhead=none];
+  "G341gat" -> "G282gat" [arrowhead=none];
+  "G342gat" -> "G319gat" [arrowhead=none];
+  "G342gat" -> "G60gat" [arrowhead=none];
+  "G343gat" -> "G309gat" [arrowhead=none];
+  "G343gat" -> "G285gat" [arrowhead=none];
+  "G344gat" -> "G319gat" [arrowhead=none];
+  "G344gat" -> "G73gat" [arrowhead=none];
+  "G345gat" -> "G319gat" [arrowhead=none];
+  "G345gat" -> "G86gat" [arrowhead=none];
+  "G346gat" -> "G319gat" [arrowhead=none];
+  "G346gat" -> "G99gat" [arrowhead=none];
+  "G347gat" -> "G319gat" [arrowhead=none];
+  "G347gat" -> "G112gat" [arrowhead=none];
+  "G348gat" -> "G330gat" [arrowhead=none];
+  "G348gat" -> "G300gat" [arrowhead=none];
+  "G349gat" -> "G331gat" [arrowhead=none];
+  "G349gat" -> "G301gat" [arrowhead=none];
+  "G350gat" -> "G332gat" [arrowhead=none];
+  "G350gat" -> "G302gat" [arrowhead=none];
+  "G351gat" -> "G333gat" [arrowhead=none];
+  "G351gat" -> "G303gat" [arrowhead=none];
+  "G352gat" -> "G335gat" [arrowhead=none];
+  "G352gat" -> "G304gat" [arrowhead=none];
+  "G353gat" -> "G337gat" [arrowhead=none];
+  "G353gat" -> "G305gat" [arrowhead=none];
+  "G354gat" -> "G339gat" [arrowhead=none];
+  "G354gat" -> "G306gat" [arrowhead=none];
+  "G355gat" -> "G341gat" [arrowhead=none];
+  "G355gat" -> "G307gat" [arrowhead=none];
+  "G356gat" -> "G343gat" [arrowhead=none];
+  "G356gat" -> "G308gat" [arrowhead=none];
+  "G357gat" -> "G348gat" [arrowhead=none];
+  "G357gat" -> "G349gat" [arrowhead=none];
+  "G357gat" -> "G350gat" [arrowhead=none];
+  "G357gat" -> "G351gat" [arrowhead=none];
+  "G357gat" -> "G352gat" [arrowhead=none];
+  "G357gat" -> "G353gat" [arrowhead=none];
+  "G357gat" -> "G354gat" [arrowhead=none];
+  "G357gat" -> "G355gat" [arrowhead=none];
+  "G357gat" -> "G356gat" [arrowhead=none];
+  "G360gat" -> "G357gat" [arrowhead=none];
+  "G370gat" -> "G357gat" [arrowhead=none];
+  "G371gat" -> "G14gat" [arrowhead=none];
+  "G371gat" -> "G360gat" [arrowhead=none];
+  "G372gat" -> "G360gat" [arrowhead=none];
+  "G372gat" -> "G27gat" [arrowhead=none];
+  "G373gat" -> "G360gat" [arrowhead=none];
+  "G373gat" -> "G40gat" [arrowhead=none];
+  "G374gat" -> "G360gat" [arrowhead=none];
+  "G374gat" -> "G53gat" [arrowhead=none];
+  "G375gat" -> "G360gat" [arrowhead=none];
+  "G375gat" -> "G66gat" [arrowhead=none];
+  "G376gat" -> "G360gat" [arrowhead=none];
+  "G376gat" -> "G79gat" [arrowhead=none];
+  "G377gat" -> "G360gat" [arrowhead=none];
+  "G377gat" -> "G92gat" [arrowhead=none];
+  "G378gat" -> "G360gat" [arrowhead=none];
+  "G378gat" -> "G105gat" [arrowhead=none];
+  "G379gat" -> "G360gat" [arrowhead=none];
+  "G379gat" -> "G115gat" [arrowhead=none];
+  "G380gat" -> "G4gat" [arrowhead=none];
+  "G380gat" -> "G242gat" [arrowhead=none];
+  "G380gat" -> "G334gat" [arrowhead=none];
+  "G380gat" -> "G371gat" [arrowhead=none];
+  "G381gat" -> "G246gat" [arrowhead=none];
+  "G381gat" -> "G336gat" [arrowhead=none];
+  "G381gat" -> "G372gat" [arrowhead=none];
+  "G381gat" -> "G17gat" [arrowhead=none];
+  "G386gat" -> "G250gat" [arrowhead=none];
+  "G386gat" -> "G338gat" [arrowhead=none];
+  "G386gat" -> "G373gat" [arrowhead=none];
+  "G386gat" -> "G30gat" [arrowhead=none];
+  "G393gat" -> "G254gat" [arrowhead=none];
+  "G393gat" -> "G340gat" [arrowhead=none];
+  "G393gat" -> "G374gat" [arrowhead=none];
+  "G393gat" -> "G43gat" [arrowhead=none];
+  "G399gat" -> "G255gat" [arrowhead=none];
+  "G399gat" -> "G342gat" [arrowhead=none];
+  "G399gat" -> "G375gat" [arrowhead=none];
+  "G399gat" -> "G56gat" [arrowhead=none];
+  "G404gat" -> "G256gat" [arrowhead=none];
+  "G404gat" -> "G344gat" [arrowhead=none];
+  "G404gat" -> "G376gat" [arrowhead=none];
+  "G404gat" -> "G69gat" [arrowhead=none];
+  "G407gat" -> "G257gat" [arrowhead=none];
+  "G407gat" -> "G345gat" [arrowhead=none];
+  "G407gat" -> "G377gat" [arrowhead=none];
+  "G407gat" -> "G82gat" [arrowhead=none];
+  "G411gat" -> "G258gat" [arrowhead=none];
+  "G411gat" -> "G346gat" [arrowhead=none];
+  "G411gat" -> "G378gat" [arrowhead=none];
+  "G411gat" -> "G95gat" [arrowhead=none];
+  "G414gat" -> "G259gat" [arrowhead=none];
+  "G414gat" -> "G347gat" [arrowhead=none];
+  "G414gat" -> "G379gat" [arrowhead=none];
+  "G414gat" -> "G108gat" [arrowhead=none];
+  "G415gat" -> "G380gat" [arrowhead=none];
+  "G416gat" -> "G381gat" [arrowhead=none];
+  "G416gat" -> "G386gat" [arrowhead=none];
+  "G416gat" -> "G393gat" [arrowhead=none];
+  "G416gat" -> "G399gat" [arrowhead=none];
+  "G416gat" -> "G404gat" [arrowhead=none];
+  "G416gat" -> "G407gat" [arrowhead=none];
+  "G416gat" -> "G411gat" [arrowhead=none];
+  "G416gat" -> "G414gat" [arrowhead=none];
+  "G417gat" -> "G393gat" [arrowhead=none];
+  "G418gat" -> "G404gat" [arrowhead=none];
+  "G419gat" -> "G407gat" [arrowhead=none];
+  "G420gat" -> "G411gat" [arrowhead=none];
+  "G421gat" -> "G415gat" [arrowhead=none];
+  "G421gat" -> "G416gat" [arrowhead=none];
+  "G422gat" -> "G386gat" [arrowhead=none];
+  "G422gat" -> "G417gat" [arrowhead=none];
+  "G425gat" -> "G386gat" [arrowhead=none];
+  "G425gat" -> "G393gat" [arrowhead=none];
+  "G425gat" -> "G418gat" [arrowhead=none];
+  "G425gat" -> "G399gat" [arrowhead=none];
+  "G428gat" -> "G399gat" [arrowhead=none];
+  "G428gat" -> "G393gat" [arrowhead=none];
+  "G428gat" -> "G419gat" [arrowhead=none];
+  "G429gat" -> "G386gat" [arrowhead=none];
+  "G429gat" -> "G393gat" [arrowhead=none];
+  "G429gat" -> "G407gat" [arrowhead=none];
+  "G429gat" -> "G420gat" [arrowhead=none];
+  "G430gat" -> "G381gat" [arrowhead=none];
+  "G430gat" -> "G386gat" [arrowhead=none];
+  "G430gat" -> "G422gat" [arrowhead=none];
+  "G430gat" -> "G399gat" [arrowhead=none];
+  "G431gat" -> "G381gat" [arrowhead=none];
+  "G431gat" -> "G386gat" [arrowhead=none];
+  "G431gat" -> "G425gat" [arrowhead=none];
+  "G431gat" -> "G428gat" [arrowhead=none];
+  "G432gat" -> "G381gat" [arrowhead=none];
+  "G432gat" -> "G422gat" [arrowhead=none];
+  "G432gat" -> "G425gat" [arrowhead=none];
+  "G432gat" -> "G429gat" [arrowhead=none];
+// Output connections
+  o0 -> "G223gat" [arrowhead=none];
+  o1 -> "G329gat" [arrowhead=none];
+  o2 -> "G370gat" [arrowhead=none];
+  o3 -> "G421gat" [arrowhead=none];
+  o4 -> "G430gat" [arrowhead=none];
+  o5 -> "G431gat" [arrowhead=none];
+  o6 -> "G432gat" [arrowhead=none];
+}

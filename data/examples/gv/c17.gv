@@ -1,0 +1,52 @@
+digraph {
+// Primary Inputs
+{ rank=sink
+  i0 [shape=invtriangle,color=blue];
+  i1 [shape=invtriangle,color=blue];
+  i2 [shape=invtriangle,color=blue];
+  i3 [shape=invtriangle,color=blue];
+  i4 [shape=invtriangle,color=blue];
+}
+// Primary Outputs
+{ rank=source
+  o0 [shape=triangle,color=blue];
+  o1 [shape=triangle,color=blue];
+}
+// Inputs
+{ rank=same
+  "G1gat" [label="IN:G1gat",shape=box]; // Input(name=G1gat)
+  "G2gat" [label="IN:G2gat",shape=box]; // Input(name=G2gat)
+  "G3gat" [label="IN:G3gat",shape=box]; // Input(name=G3gat)
+  "G6gat" [label="IN:G6gat",shape=box]; // Input(name=G6gat)
+  "G7gat" [label="IN:G7gat",shape=box]; // Input(name=G7gat)
+}
+// Gates
+  "G10gat" [label="NAND:G10gat",shape=rect]; // Gate(name=G10gat, type=NAND, args=[G1gat, G3gat])
+  "G11gat" [label="NAND:G11gat",shape=rect]; // Gate(name=G11gat, type=NAND, args=[G3gat, G6gat])
+  "G16gat" [label="NAND:G16gat",shape=rect]; // Gate(name=G16gat, type=NAND, args=[G2gat, G11gat])
+  "G19gat" [label="NAND:G19gat",shape=rect]; // Gate(name=G19gat, type=NAND, args=[G11gat, G7gat])
+  "G22gat" [label="NAND:G22gat",shape=rect]; // Gate(name=G22gat, type=NAND, args=[G10gat, G16gat])
+  "G23gat" [label="NAND:G23gat",shape=rect]; // Gate(name=G23gat, type=NAND, args=[G16gat, G19gat])
+// Input connections
+  "G1gat" -> i0 [arrowhead=none];
+  "G2gat" -> i1 [arrowhead=none];
+  "G3gat" -> i2 [arrowhead=none];
+  "G6gat" -> i3 [arrowhead=none];
+  "G7gat" -> i4 [arrowhead=none];
+// Node connections
+  "G10gat" -> "G1gat" [arrowhead=none];
+  "G10gat" -> "G3gat" [arrowhead=none];
+  "G11gat" -> "G3gat" [arrowhead=none];
+  "G11gat" -> "G6gat" [arrowhead=none];
+  "G16gat" -> "G2gat" [arrowhead=none];
+  "G16gat" -> "G11gat" [arrowhead=none];
+  "G19gat" -> "G11gat" [arrowhead=none];
+  "G19gat" -> "G7gat" [arrowhead=none];
+  "G22gat" -> "G10gat" [arrowhead=none];
+  "G22gat" -> "G16gat" [arrowhead=none];
+  "G23gat" -> "G16gat" [arrowhead=none];
+  "G23gat" -> "G19gat" [arrowhead=none];
+// Output connections
+  o0 -> "G22gat" [arrowhead=none];
+  o1 -> "G23gat" [arrowhead=none];
+}

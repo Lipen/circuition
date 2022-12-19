@@ -31,7 +31,7 @@ dependencies {
 
     // Logging
     implementation("io.github.microutils:kotlin-logging:3.0.4")
-    runtimeOnly("ch.qos.logback:logback-classic:1.4.4")
+    runtimeOnly("org.fusesource.jansi:jansi:1.18")
 
     // Test
     testImplementation(kotlin("test"))
