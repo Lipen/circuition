@@ -58,7 +58,7 @@ private fun mergeBackslash(lines: Sequence<String>): Sequence<String> = sequence
     }
 }
 
-private const val IDENT = """[a-zA-Z_][\w.]*"""
+private const val IDENT = """[a-zA-Z_][\w.\[\]]*"""
 private val RE_SPACE = Regex("\\s+")
 private val RE_MODEL = Regex("""\.model\s+(?<name>[\w.]+)""")
 private val RE_INPUTS = Regex("""\.inputs(?<inputs>(?:\s+$IDENT)*)""")
